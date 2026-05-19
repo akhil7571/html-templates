@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akhilesh Kumar Chaurasiya – Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Akhilesh Kumar Chaurasiya – CSE Student, Frontend & PHP Developer from Uttar Pradesh, India." />
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- LOADER -->
+    <div id="loader">
+      <div class="loader-logo">AKC</div>
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    </div>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">Message sent! I'll get back to you soon ✨</div>
+
+    <!-- PARTICLES -->
+    <canvas id="particles"></canvas>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-close" id="menuClose">✕</button>
+      <a href="#home" onclick="closeMob()">Home</a>
+      <a href="#about" onclick="closeMob()">About</a>
+      <a href="#skills" onclick="closeMob()">Skills</a>
+      <a href="#projects" onclick="closeMob()">Projects</a>
+      <a href="#education" onclick="closeMob()">Education</a>
+      <a href="#certifications" onclick="closeMob()">Certifications</a>
+      <a href="#contact" onclick="closeMob()">Contact</a>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <a href="#home" class="nav-logo">AKC.</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-badge reveal">
+              <div class="badge-dot"></div>
+              Available for Opportunities
+            </div>
+            <h1 class="hero-name reveal">
+              Hi, I'm<br /><span>Akhilesh Kumar<br />Chaurasiya</span>
+            </h1>
+            <div class="hero-typing reveal" id="typingEl">
+              <span id="typed-text"></span><span class="cursor"></span>
+            </div>
+            <p class="hero-desc reveal">
+              Passionate about building responsive and modern web applications.
+              CSE Student crafting digital experiences with clean code and creative thinking.
+            </p>
+            <div class="btn-group reveal">
+              <a href="#contact" class="btn btn-primary">💼 Hire Me</a>
+              <a href="#" class="btn btn-outline" onclick="showToast('Resume download coming soon!'); return false;">📄 Resume</a>
+              <a href="#contact" class="btn btn-outline">✉️ Contact</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal">
+            <div style="position: relative; display: flex; align-items: center; justify-content: center; width: 340px; height: 340px;">
+              <div class="orbit-ring"><div class="orbit-dot"></div></div>
+              <div class="orbit-ring"><div class="orbit-dot"></div></div>
+              <div class="avatar-ring">
+                <div class="avatar-inner">
+                  <div class="avatar-emoji">
+                    <img src="images/akku.jpeg" alt="Akhilesh" style="width:100%; height:100%; object-fit:cover; border-radius:50%;" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <div class="container">
+        <span class="section-tag reveal">// about me</span>
+        <h2 class="section-title reveal">The Developer Behind<br />The Code</h2>
+        <div class="about-grid">
+          <div class="about-visual glass reveal">
+            <div class="stat-grid">
+              <div class="stat-box">
+                <div class="stat-num">4+</div>
+                <div class="stat-label">Projects Built</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">2+</div>
+                <div class="stat-label">Certifications</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">3</div>
+                <div class="stat-label">Years Study</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-num">∞</div>
+                <div class="stat-label">Passion to Learn</div>
+              </div>
+            </div>
+            <div class="trait-list" style="margin-top: 1.5rem">
+              <span class="trait">Fast Learner</span>
+              <span class="trait">Problem Solver</span>
+              <span class="trait">Team Player</span>
+              <span class="trait">UI/UX Focused</span>
+              <span class="trait">Detail Oriented</span>
+              <span class="trait">Creative Thinker</span>
+            </div>
+          </div>
+          <div class="about-text reveal">
+            <p>
+              I'm <strong style="color: var(--neon)">Akhilesh Kumar Chaurasiya</strong>, a Diploma Computer Science Engineering student from Uttar Pradesh, India, passionate about transforming ideas into real-world digital products.
+            </p>
+            <p>
+              My journey in web development spans both the frontend and backend. I love building visually stunning, responsive interfaces with HTML, CSS, Bootstrap, and JavaScript, while also crafting robust server-side logic with PHP and MySQL.
+            </p>
+            <p>
+              Beyond web development, I've explored Python and computer vision through a face recognition attendance system — demonstrating my curiosity for emerging technologies and automation.
+            </p>
+            <p>
+              I'm a fast learner who thrives on challenges, always focused on delivering clean, maintainable code and exceptional user experiences. I'm eager to contribute to impactful projects and grow as a full-stack developer.
+            </p>
+            <a href="#contact" class="btn btn-primary" style="margin-top: 1.5rem; display: inline-flex;">🚀 Let's Build Something</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <div class="container">
+        <span class="section-tag reveal">// tech arsenal</span>
+        <h2 class="section-title reveal">Skills & Technologies</h2>
+        <p class="section-sub reveal">A diverse toolkit spanning frontend, backend, and beyond — constantly expanding.</p>
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-category glass glow-card reveal">
+            <div class="skill-cat-title"><span class="cat-icon">🎨</span> Frontend</div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">HTML5</span><span class="skill-pct">92%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">CSS3</span><span class="skill-pct">88%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">Bootstrap</span><span class="skill-pct">85%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">JavaScript</span><span class="skill-pct">72%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-w="72"></div></div>
+              </div>
+            </div>
+          </div>
+          <!-- Backend -->
+          <div class="skill-category glass glow-card reveal">
+            <div class="skill-cat-title"><span class="cat-icon">⚙️</span> Backend</div>
+            <div class="skill-items">
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">PHP</span><span class="skill-pct">80%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header"><span class="skill-name">MySQL</span><span class="skill-pct">78%</span></div>
+                <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+              </div>
+            </div>
+            <div style="margin-top: 1.5rem">
+              <div class="skill-cat-title" style="margin-bottom: 1rem"><span class="cat-icon">🔧</span> Other Skills</div>
+              <div class="skill-badge-grid">
+                <span class="skill-badge">C Programming</span>
+                <span class="skill-badge">Database Management</span>
+                <span class="skill-badge">Responsive Design</span>
+                <span class="skill-badge">Computer Literacy</span>
+                <span class="skill-badge">Python (Basics)</span>
+                <span class="skill-badge">OpenCV</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">UI/UX Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <div class="container">
+        <span class="section-tag reveal">// my work</span>
+        <h2 class="section-title reveal">Featured Projects</h2>
+        <p class="section-sub reveal">Real-world projects that demonstrate my skills across the full development stack.</p>
+        <div class="projects-grid">
+          <div class="project-card glass glow-card reveal">
+            <div class="project-icon">🍔</div>
+            <span class="project-num">01 — Featured</span>
+            <h3 class="project-title">Feedzy Food Delivery</h3>
+            <p class="project-desc">A full-featured food delivery web app with ordering system, cart functionality, user authentication, and a powerful admin dashboard.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span>
+              <span class="tech-pill">Bootstrap</span><span class="tech-pill">PHP</span>
+              <span class="tech-pill">MySQL</span>
+            </div>
+          </div>
+          <div class="project-card glass glow-card reveal">
+            <div class="project-icon">👥</div>
+            <span class="project-num">02 — Backend</span>
+            <h3 class="project-title">Employee Management System</h3>
+            <p class="project-desc">A complete CRUD-based employee management system with record management, database integration, and a clean Bootstrap interface.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">PHP</span><span class="tech-pill">MySQL</span>
+              <span class="tech-pill">Bootstrap</span>
+            </div>
+          </div>
+          <div class="project-card glass glow-card reveal">
+            <div class="project-icon">🤖</div>
+            <span class="project-num">03 — AI/ML</span>
+            <h3 class="project-title">Face Recognition Attendance</h3>
+            <p class="project-desc">An automated attendance system leveraging Python and OpenCV for real-time face recognition — eliminating manual attendance completely.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">Python</span><span class="tech-pill">OpenCV</span>
+            </div>
+          </div>
+          <div class="project-card glass glow-card reveal">
+            <div class="project-icon">🌐</div>
+            <span class="project-num">04 — This Site</span>
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-desc">A premium, animated developer portfolio with glassmorphism UI, particle effects, and a futuristic dark theme — the one you're viewing right now.</p>
+            <div class="tech-stack">
+              <span class="tech-pill">HTML</span><span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <div class="container">
+        <span class="section-tag reveal">// academic journey</span>
+        <h2 class="section-title reveal">Education</h2>
+        <p class="section-sub reveal">Building a strong technical foundation through structured learning and hands-on projects.</p>
+        <div class="edu-timeline">
+          <div class="edu-item reveal">
+            <div class="edu-dot"></div>
+            <div class="edu-card glass glow-card">
+              <div class="edu-period">2023 – 2026 · Current</div>
+              <div class="edu-degree">Diploma in Computer Science Engineering</div>
+              <div class="edu-school"><strong>Government Polytechnic College</strong> · BTEUP</div>
+              <div class="trait-list" style="margin-top: 1rem">
+                <span class="trait">Web Development</span>
+                <span class="trait">Database Systems</span>
+                <span class="trait">C Programming</span>
+                <span class="trait">Computer Networks</span>
+              </div>
+            </div>
+          </div>
+          <div class="edu-item reveal">
+            <div class="edu-dot" style="background: linear-gradient(135deg, var(--neon3), var(--neon));"></div>
+            <div class="edu-card glass glow-card">
+              <div class="edu-period">BTEUP Polytechnic</div>
+              <div class="edu-degree">Government Polytechnic</div>
+              <div class="edu-school"><strong>Adampur Tarabganj, Gonda</strong> · Uttar Pradesh, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications">
+      <div class="container">
+        <span class="section-tag reveal">// credentials</span>
+        <h2 class="section-title reveal">Certifications</h2>
+        <p class="section-sub reveal">Industry-recognized certifications that validate my technical expertise.</p>
+        <div class="certs-grid">
+          <div class="cert-card glass glow-card reveal">
+            <div class="cert-icon">🏆</div>
+            <div class="cert-org">Digi{Coder's} Technologies Pvt. Ltd. · Lucknow</div>
+            <div class="cert-title">PHP Core Development</div>
+            <div class="cert-topics">
+              <div class="cert-topic">PHP fundamentals & syntax</div>
+              <div class="cert-topic">Form handling & validation</div>
+              <div class="cert-topic">CRUD operations</div>
+              <div class="cert-topic">MySQL database connectivity</div>
+              <div class="cert-topic">Authentication systems</div>
+              <div class="cert-topic">Dynamic website development</div>
+            </div>
+          </div>
+          <div class="cert-card glass glow-card reveal">
+            <div class="cert-icon">📊</div>
+            <div class="cert-org">Deloitte Australia · Job Simulation</div>
+            <div class="cert-title">Data Analytics Job Simulation</div>
+            <div class="cert-topics">
+              <div class="cert-topic">Data analytics methodologies</div>
+              <div class="cert-topic">Business problem solving</div>
+              <div class="cert-topic">Data visualization techniques</div>
+              <div class="cert-topic">Analytical thinking & insights</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <span class="section-tag reveal">// get in touch</span>
+        <h2 class="section-title reveal">Let's Work Together</h2>
+        <p class="section-sub reveal">I'm open to internships, freelance projects, and full-time opportunities. Let's create something amazing.</p>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-item glass glow-card">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <a href="mailto:akhileshchaurasiya171@gmail.com" class="contact-value">akhileshchaurasiya171@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item glass glow-card">
+              <div class="contact-icon">💼</div>
+              <div>
+                <div class="contact-label">LinkedIn</div>
+                <a href="https://www.linkedin.com/in/akhilesh-kumar-chaurasiya-959936322/" class="contact-value">Akhilesh Kumar Chaurasiya</a>
+              </div>
+            </div>
+            <div class="contact-item glass glow-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div class="contact-label">Location</div>
+                <span class="contact-value">Uttar Pradesh, India</span>
+              </div>
+            </div>
+            <div>
+              <div class="contact-label" style="margin-bottom: 0.75rem">Find me on</div>
+              <div class="social-row">
+                <a href="https://www.instagram.com/lckyy_07?igsh=MXh4d3ptNnFtNDgxOQ==" target="_blank" class="social-btn" title="Instagram">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M7.75 2C4.574 2 2 4.574 2 7.75v8.5C2 19.426 4.574 22 7.75 22h8.5C19.426 22 22 19.426 22 16.25v-8.5C22 4.574 19.426 2 16.25 2h-8.5zm0 2h8.5C18.322 4 20 5.678 20 7.75v8.5C20 18.322 18.322 20 16.25 20h-8.5C5.678 20 4 18.322 4 16.25v-8.5C4 5.678 5.678 4 7.75 4zm8.75 1a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5zM12 7C9.239 7 7 9.239 7 12s2.239 5 5 5 5-2.239 5-5-2.239-5-5-5zm0 2c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/akhilesh-kumar-chaurasiya-959936322/" class="social-btn" title="LinkedIn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </a>
+                <a href="mailto:akhileshchaurasiya171@gmail.com" class="social-btn" title="Email">✉️</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form glass reveal">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-input" id="fname" />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" id="femail" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-input" id="fsubject" />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-textarea" placeholder="Tell me about your project or opportunity..." id="fmessage"></textarea>
+            </div>
+            <button class="form-submit" onclick="handleSubmit()">🚀 Send Message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <p class="footer-text">
+          Designed & Developed by <span>Akhilesh Kumar Chaurasiya</span> · <span>2026</span>
+        </p>
+      </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button id="back-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Back to top">↑</button>
+
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
